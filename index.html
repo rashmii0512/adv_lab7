@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Data Visualizations</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-red-50">
+    <h1 class="text-center text-red-950 font-bold text-8xl p-4">Finance Data Visualizations</h1>
+    <div class="grid grid-cols-12 mx-5">
+       
+        <div  class="chart col-span-2    p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">People seeking investment avenue</div>
+            <div class="p-10" id="pie-chart"></div>
+            <div class="text-3xl pt-3 flex">
+                <div class="p-3 bg-red-400"></div> <div class="pr-10">&nbsp;Yes</div>
+                <div class="p-3 bg-red-600"> </div>&nbsp;No</div>
+        </div>
+        <div  class="chart col-span-2    p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">People seeking stock market</div>
+            <div class="p-10" id="pie-chart2"></div>
+            <div class="text-3xl pt-3 flex">
+                <div class="p-3 bg-red-400"></div> <div class="pr-10">&nbsp;Yes</div>
+                <div class="p-3 bg-red-600"> </div>&nbsp;No</div>
+        </div>
+        <div  class="chart col-span-2 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Distribution of gold investment</div>
+            <div class="self-center font-bold text-2xl" id="box-plot"></div>
+        </div>
+        
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Proportion of Factors</div>
+            <div class="self-center font-bold text-2xl" id="bar-chart"></div>
+        </div>
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Proportion of Saving Objectives</div>
+            <div class="self-center font-bold text-xl" id="savings-objectives-chart"></div>
+        </div>
+        
+
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-5">Distribution of age</div>
+            <div class="pt-10" id="histogram"></div>
+            <div class="font-bold text-2xl">Age</div>
+        </div>
+        
+
+        <div  class="chart col-span-4 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Regression Plot of Mutual Funds vs Fixed Deposits</div>
+            <div class="self-center font-bold text-2xl" id="regression-plot"></div>
+        </div>
+
+        <div  class="chart col-span-4 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Scatter Plot of Age vs PPF</div>
+            <div class="self-center font-bold text-2xl" id="scatter-plot"></div>
+        </div>
+
+        <div  class="chart col-span-1 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-red-900 font-bold text-3xl pb-7">Population count</div>
+            <div class="self-center font-bold text-3xl" id="info-cards"></div>
+        </div>
+
+        
+
+    </div>
+    
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
